@@ -42,7 +42,7 @@ dependencies {
     implementation 'androidx.room:room-rxjava2:2.2.1'
 
     //RX
-    // this rxjava2 commended cos rxandroid has implemented, but with different version
+    // this rxjava2 is commended cos rxandroid has implemented it, but with different version
     // if you wanna use new version of rxjava2 dependencies, uncomment implementation below
     // implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
