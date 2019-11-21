@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_cart"
+        />
+
+    <ImageView
+        android:id="@+id/emptyIcon"
+        android:layout_width="@dimen/emptyIconSize"
+        android:layout_height="@dimen/emptyIconSize"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_shopping_cart_black"
+        android:tint="@color/colorIconEmpty"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"
+        />
+    <TextView
+        android:id="@+id/emptyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_message"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone"
+        app:layout_anchor="@id/emptyIcon"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/contentMargin"
+        android:src="@drawable/ic_add_black"
+        android:tint="@android:color/white"
+        android:onClick="addCart"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

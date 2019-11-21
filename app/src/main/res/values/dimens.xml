@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contentMargin">16dp</dimen>
+    <dimen name="contentPadding">8dp</dimen>
+    <dimen name="textSizeLarge">24sp</dimen>
+    <dimen name="emptyIconSize">160dp</dimen>
+</resources>

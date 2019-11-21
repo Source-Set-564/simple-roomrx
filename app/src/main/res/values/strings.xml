@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RoomRX</string>
+    <string name="empty_message">Add cart item to fill it</string>
+    <string name="item_qty">Qty : %1$d</string>
+    <string name="label_total">Total</string>
+    <string name="action_remove_all">Remove All</string>
+</resources>
